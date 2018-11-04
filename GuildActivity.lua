@@ -64,7 +64,7 @@ local gas_panelData = {
 		slashCommand = "/gasset",
 		registerForRefresh = false,
 		registerForDefaults = false,
-		website = "https://github.com/allquixotic/ESOGuildActivity",
+		website = "https://github.com/allquixotic/ESOGuildActivityAddon",
 }
 
 local gas_optionsData = {
