@@ -195,10 +195,10 @@ local function gas_doit(guildIndex)
 	end
 	if gas_savedVariables.onlines[ts] == nil then gas_savedVariables.onlines[ts] = {} end
 	if gas_savedVariables.onlines[ts][gid] == nil then gas_savedVariables.onlines[ts][gid] = {} end
-	d("In gas_doit: guildIndex= " .. guildIndex .. ", n=" .. n .. ", ts=" .. ts .. ", gid=" .. gid)
+	--d("In gas_doit: guildIndex= " .. guildIndex .. ", n=" .. n .. ", ts=" .. ts .. ", gid=" .. gid)
 	for i=1,n do
 		local name,note,rankIndex,playerStatus,secsSinceLogoff = GetGuildMemberInfo(GetGuildId(guildIndex),i)
-		d("GuildMemberInfo: " .. name .. ", " .. note .. ", " .. rankIndex .. ", " .. playerStatus .. ", " .. secsSinceLogoff)
+		--d("GuildMemberInfo: " .. name .. ", " .. note .. ", " .. rankIndex .. ", " .. playerStatus .. ", " .. secsSinceLogoff)
 		if gas_savedVariables.onlines[ts][gid][name] == nil then gas_savedVariables.onlines[ts][gid][name] = {} end
 		gas_savedVariables.onlines[ts][gid][name].rank = rankIndex
 		gas_savedVariables.onlines[ts][gid][name].secsSinceLogoff = secsSinceLogoff
@@ -212,7 +212,7 @@ function gas_doitAll(_)
 	for i = 1, numGuilds do
 		local gid = gas_guildNames[i]
 		if gas_savedVariables.guildsToLog ~= nil and gas_savedVariables.guildsToLog[gid] == true then
-			d("In gas_doitAll: numGuilds=" .. numGuilds .. ", gid=" .. gid .. ", gas_guildIndexes[gid]=" .. gas_guildIndexes[gid])
+			--d("In gas_doitAll: numGuilds=" .. numGuilds .. ", gid=" .. gid .. ", gas_guildIndexes[gid]=" .. gas_guildIndexes[gid])
 			gas_doit(gas_guildIndexes[gid])
 			atLeastOne = true
 		end
