@@ -14,3 +14,5 @@ The saved variables file can be parsed by a Lua or LSON parser, or transformed i
 Check out https://github.com/allquixotic/ESOGuildActivityDataUpload !
 
 This addon is hosted on ESOUI (Minion) at https://www.esoui.com/downloads/info2190-GuildActivity.html
+
+**Requires LibStub and LibAddonMenu-2.0 to be installed separately. They are NOT bundled with the addon!**
