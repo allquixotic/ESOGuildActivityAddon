@@ -1,14 +1,11 @@
 ## DisableSavedVariablesAutoSaving 0
 ## Title: GuildActivity
 ## Description: Logs guild member activity to saved variables.
-## Version: 1.0
-## APIVersion: 100025
+## Version: 1.1
+## APIVersion: 100026 100027 100028
 ## Author: @Coorbin
 ## SavedVariables: GuildActivityDB
-## OptionalDependsOn: LibStub LibAddonMenu-2.0
-
-Libs/LibStub/LibStub.lua
-Libs/LibAddonMenu-2.0/LibAddonMenu-2.0.lua
+## DependsOn: LibStub LibAddonMenu-2.0
 
 GuildActivity.lua
 
